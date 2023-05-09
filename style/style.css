@@ -8,7 +8,7 @@ body{
     background-color: #ffffff;
 }
 /* naevegador */
-.nav{
+.navb{
     background-color: #cdb0ee;
 }
 .nav_principal{
@@ -44,7 +44,6 @@ body{
 .link_nav a:hover{
     color: #fff;
     border-bottom:2px solid #fff ;
-    
 }
 
 /* contenido */
@@ -243,4 +242,68 @@ footer div div ul li a{
     .footer_enlaces-a a{
         margin: 0;
     }
+}
+/*    otras paginas      */
+
+/* novedad */
+#id_novedad{
+    color: #fff;
+}
+.catalogo{
+    margin: 100px 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.catalogo_img{
+    display: flex;
+    max-width: 500px;
+    max-height: 350px;
+}
+.catalogo_titulo{
+    margin-bottom: 40px;
+}
+.catalogo_parrafo{
+    margin-bottom: 20px;
+}
+.boton_catalogo{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid transparent;
+    font-weight: bold;
+    background-color: #cdb0ee;
+    padding: 5px;
+    border-radius: 5px;
+}
+.boton_catalogo:hover {
+    color: #000;
+}
+@media (max-width:1000px){
+    .catalogo{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin: 20px;
+    }
+}
+@media (max-width:500px){
+    .catalogo{
+        display: none;
+    }
+}
+
+/* Top sellers */
+
+#id_topsellers{
+    color: #fff;
+}
+
+
+
+/* MI cuenta */
+
+#id_micuenta{
+    color: #fff;
 }
