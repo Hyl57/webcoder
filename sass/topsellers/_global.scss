@@ -1,0 +1,17 @@
+@mixin bp($num) {
+    display: grid;
+    grid-template-columns: repeat($num,1fr);
+    align-items: center;
+    justify-items: space-evenly;
+}
+.color{
+    color: #b26eff;
+}
+@mixin mobile ($pixels){
+    @media (max-width: $pixels){
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+}

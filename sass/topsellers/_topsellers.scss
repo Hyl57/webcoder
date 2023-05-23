@@ -1,0 +1,31 @@
+@import "./global";
+main {
+    h1{
+        @extend .color;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 3px solid #000;
+    }
+    .productos_destacados{
+        margin-top: 20px;
+    }
+
+}
+.topsellers{
+    @include bp (2);
+    @include mobile(1100px);
+    img{
+        max-width: 100%;
+        &:hover{
+            transition: all,2s,solid;
+            transform: scale(1.2);
+            position: relative;
+        }
+    }
+    .descripciontop{
+        &_titulo{
+            line-height: 5;
+            font-size: 20px;
+        }
+    }
+}
