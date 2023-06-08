@@ -45,6 +45,37 @@ body{
     color: #fff;
     border-bottom:2px solid #fff ;
 }
+.link2{
+    background-color: #cdb0ee;
+}
+.icon_nav{
+    margin: 20px;
+}
+.link_nav2{
+    position: absolute;
+    background-color: #cdb0ee;
+    opacity: 0.5;
+    width: 100%;
+    left: 0;
+    top: 50px;
+    line-height: 1.5;
+    display: none;
+}
+.link_nav2-principal{
+    text-align: center;
+}
+.link_nav2-principal a{
+    text-decoration: none;
+    color: #8d8d8d;
+    font-size: 30px;
+}
+.link_nav2-principal a:hover{
+    color: #fff;
+}
+.link2:hover .link_nav2 {
+    display: block;
+}
+
 
 /* contenido */
 
@@ -185,7 +216,9 @@ footer div div ul li a{
         justify-items: start;
         margin: 0%;
     }
-    
+    .navb{
+        display: flex;
+    }
     .link_nav{
         display: none;
     }
@@ -241,6 +274,12 @@ footer div div ul li a{
     }
     .footer_enlaces-a a{
         margin: 0;
+    }
+}
+@media (min-width:800px){
+    
+    .link2{
+        display: none;
     }
 }
 /*    otras paginas      */
